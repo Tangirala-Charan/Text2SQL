@@ -1,0 +1,57 @@
+{
+  "program": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Transform a natural language query into a SQL query.\nYou will be given a question which will tell what you need to do\nand a sql_context which will give some additional context to generate the right SQL.\nOnly generate the SQL query nothing else. You should give one correct answer.\nstarting and ending with ```",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "Natural language query"
+        },
+        {
+          "prefix": "Sql Context:",
+          "description": "Context for the query"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Sql:",
+          "description": "SQL Query"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "Transform a natural language query into a SQL query.\nYou will be given a question which will tell what you need to do\nand a sql_context which will give some additional context to generate the right SQL.\nOnly generate the SQL query nothing else. You should give one correct answer.\nstarting and ending with ```",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "Natural language query"
+        },
+        {
+          "prefix": "Sql Context:",
+          "description": "Context for the query"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Sql:",
+          "description": "SQL Query"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11.10",
+      "dspy": "2.5.43",
+      "cloudpickle": "3.1.0"
+    }
+  }
+}
